@@ -1,0 +1,12 @@
+/deep/ *, *:before, *:after {
+    box-sizing: border-box;
+}
+
+app-team {
+    position: absolute;
+}
+
+app-country {
+    position: absolute;
+    left: 350px;
+}

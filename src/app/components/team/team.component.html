@@ -1,0 +1,20 @@
+<div class="main">
+  <div class="col left">
+    <p>Team:</p>
+    <p>Rate:</p>
+    <p>Plays in UEFA:</p>
+  </div>
+  <div class="col right">
+    <div class="selectdiv">
+        <select name="select" (change)="show()" [(ngModel)]="select">
+          <option *ngFor="let team of teams; let i = index" [value]="i">
+            {{team.teamName}}
+          </option>
+        </select>
+    </div>
+    <p>
+      <span *ngFor="let i of [1,2,3,4,5];" [class.rate]="i > team.rate">&#9733;</span>
+    </p>
+    <p>{{inUefaLeague}}</p>
+  </div>
+</div>
